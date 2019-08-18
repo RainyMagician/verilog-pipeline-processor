@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : pipeline_riscv
+Version: I-2013.12
+Date   : Tue Apr 17 16:44:36 2018
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /home/alfred.brian.chua/lab5v3/lib/saed90nm_typ.db)
+
+Number of ports:                          323
+Number of nets:                          1323
+Number of cells:                          516
+Number of combinational cells:            505
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         44
+Number of references:                      26
+
+Combinational area:              48707.481725
+Buf/Inv area:                     2074.521654
+Noncombinational area:           42807.397871
+Macro/Black Box area:                0.000000
+Net Interconnect area:           10108.270332
+
+Total cell area:                 91514.879596
+Total area:                     101623.149928
+1

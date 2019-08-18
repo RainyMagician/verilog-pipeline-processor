@@ -1,0 +1,14 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'pipeline_riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : pipeline_riscv
+Version: I-2013.12
+Date   : Tue Apr 17 16:44:36 2018
+****************************************
+
+This design has no violated constraints.
+
+1

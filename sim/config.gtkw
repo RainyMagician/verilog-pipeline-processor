@@ -1,0 +1,68 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Tue Apr 17 02:39:18 2018
+[*]
+[dumpfile] "/media/sf_113/lab5/sim/test_rtl.vpd"
+[dumpfile_mtime] "Tue Apr 17 02:38:02 2018"
+[dumpfile_size] 97880
+[savefile] "/media/sf_113/lab5/sim/config.gtkw"
+[timestart] 0
+[size] 1920 1031
+[pos] -1 -1
+*-15.369282 20500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.UUT.
+[sst_width] 225
+[signals_width] 192
+[sst_expanded] 1
+[sst_vpaned_height] 304
+@28
+tb.clk
+tb.nrst
+@22
+[color] 2
+tb.pc_IF[31:0]
+[color] 3
+tb.pc_ID[31:0]
+[color] 4
+tb.pc_EXE[31:0]
+[color] 5
+tb.pc_MEM[31:0]
+[color] 7
+tb.pc_WB[31:0]
+[color] 2
+tb.UUT.inst_IF[31:0]
+[color] 3
+tb.UUT.inst_ID[31:0]
+tb.UUT.inst_EXE[31:0]
+[color] 5
+tb.UUT.inst_MEM[31:0]
+[color] 7
+tb.UUT.inst_WB[31:0]
+@28
+tb.UUT.stall
+tb.UUT.fwd_opA[2:0]
+tb.UUT.fwd_opB[2:0]
+tb.UUT.fwd_sw[2:0]
+tb.UUT.fwd_jr[2:0]
+@22
+tb.UUT.ALU.opA[31:0]
+tb.UUT.ALU.opB[31:0]
+tb.UUT.ALU.res[31:0]
+@c00028
+tb.UUT.CTRL.Lchk[2:0]
+@28
+(0)tb.UUT.CTRL.Lchk[2:0]
+(1)tb.UUT.CTRL.Lchk[2:0]
+(2)tb.UUT.CTRL.Lchk[2:0]
+@1401200
+-group_end
+@28
+tb.UUT.CTRL.Ichk[2:0]
+tb.UUT.CTRL.Rchk[2:0]
+tb.UUT.CTRL.JALchk[2:0]
+tb.UUT.CTRL.rs1dep[2:0]
+tb.UUT.CTRL.rs2dep[2:0]
+tb.UUT.CTRL.rddep[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

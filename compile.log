@@ -1,0 +1,361 @@
+set_app_var search_path "$search_path mapped lib scripts rtl cons"
+. /usr/synopsys/syn/I-2013.12/libraries/syn /usr/synopsys/syn/I-2013.12/minpower/syn /usr/synopsys/syn/I-2013.12/dw/syn_ver /usr/synopsys/syn/I-2013.12/dw/sim_ver mapped lib scripts rtl cons
+set_app_var target_library saed90nm_typ.db
+saed90nm_typ.db
+set_app_var link_library "* $target_library"
+* saed90nm_typ.db
+read_verilog "pipeline_riscv.v"
+Loading db file '/home/alfred.brian.chua/lab5v3/lib/saed90nm_typ.db'
+Loading db file '/usr/synopsys/syn/I-2013.12/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/I-2013.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Loading verilog file '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v
+Warning:  /home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v:330: A unnamed generate block with an LRM-defined name 'genblk1' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+Warning:  /home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v:357: A unnamed generate block with an LRM-defined name 'genblk2' is detected, which is incompatible with Verilog standard 2001 or 1995. (VER-944)
+
+Statistics for case statements in always block at line 79 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            80            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 88 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            89            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 154 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           155            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 163 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           164            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 172 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           173            |    auto/auto     |
+===============================================
+Warning:  /home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v:267: Net data_wr or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Statistics for case statements in always block at line 358 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           365            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 397 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           398            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 414 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           415            |    auto/auto     |
+|           421            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 460 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           461            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine if_id_reg line 621 in file
+                '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     next_pc_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     cur_pc_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine id_exe_reg line 656 in file
+                '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reg_addr_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|     cur_pc_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     next_pc_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     bra_off_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       opA_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       opB_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    mem_data_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine exe_mem_reg line 693 in file
+                '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    mem_data_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    reg_addr_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|     cur_pc_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     next_pc_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     alu_out_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine mem_wb_reg line 724 in file
+                '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reg_data_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    reg_addr_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|     cur_pc_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     next_pc_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 761 in file
+        '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           763            |    auto/auto     |
+===============================================
+Warning:  Starting with the 2000.11-1 release, the Presto Verilog reader treats Verilog 'integer' types as signed; synthesized result may not match earlier versions of HDL Compiler. (VER-314)
+
+Inferred memory devices in process
+        in routine rf line 808 in file
+                '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mem_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|      rf/805      |   32   |   32    |      5       | N  |
+|      rf/806      |   32   |   32    |      5       | N  |
+===========================================================
+
+Inferred memory devices in process
+        in routine reg_fwd line 834 in file
+                '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     fwd_opB_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|     fwd_sw_reg      | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|     fwd_opA_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine reg32 line 855 in file
+                '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_out_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.db:pipeline_riscv'
+Loaded 10 designs.
+Current design is 'pipeline_riscv'.
+pipeline_riscv control if_id_reg id_exe_reg exe_mem_reg mem_wb_reg alu rf reg_fwd reg32
+current_design pipeline_riscv
+Current design is 'pipeline_riscv'.
+{pipeline_riscv}
+link
+
+  Linking design 'pipeline_riscv'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (10 designs)              /home/alfred.brian.chua/lab5v3/rtl/pipeline_riscv.db, etc
+  saed90nm_typ (library)      /home/alfred.brian.chua/lab5v3/lib/saed90nm_typ.db
+
+1
+check_design > check_design.log
+source timing.con
+1
+compile
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 241 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'reg32_0'
+  Processing 'reg_fwd'
+  Processing 'control'
+  Processing 'mem_wb_reg'
+  Processing 'exe_mem_reg'
+  Processing 'alu'
+  Processing 'id_exe_reg'
+  Processing 'rf'
+  Processing 'if_id_reg'
+  Processing 'pipeline_riscv'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'pipeline_riscv_DW01_add_0'
+  Processing 'pipeline_riscv_DW01_add_1'
+  Processing 'alu_DW01_cmp2_0'
+  Processing 'alu_DW01_sub_0'
+  Processing 'alu_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07  116317.0      0.00       0.0       0.0                          
+    0:00:07  116317.0      0.00       0.0       0.0                          
+    0:00:07  116317.0      0.00       0.0       0.0                          
+    0:00:07  116317.0      0.00       0.0       0.0                          
+    0:00:07  116317.0      0.00       0.0       0.0                          
+    0:00:07  102007.6      0.00       0.0       0.0                          
+    0:00:07  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.1      0.00       0.0       0.0                          
+    0:00:08  101896.9      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:08  101896.9      0.00       0.0       0.0                          
+    0:00:08  101896.9      0.00       0.0       0.0                          
+    0:00:08  101694.7      0.00       0.0       0.0                          
+    0:00:08  101663.0      0.00       0.0       0.0                          
+    0:00:09  101640.7      0.00       0.0       0.0                          
+    0:00:09  101631.8      0.00       0.0       0.0                          
+    0:00:09  101624.1      0.00       0.0       0.0                          
+    0:00:09  101624.1      0.00       0.0       0.0                          
+    0:00:09  101624.1      0.00       0.0       0.0                          
+    0:00:09  101623.1      0.00       0.0       0.0                          
+    0:00:09  101623.1      0.00       0.0       0.0                          
+    0:00:09  101623.1      0.00       0.0       0.0                          
+    0:00:09  101623.1      0.00       0.0       0.0                          
+    0:00:09  101623.1      0.00       0.0       0.0                          
+    0:00:09  101623.1      0.00       0.0       0.0                          
+    0:00:09  101623.1      0.00       0.0       0.0                          
+Loading db file '/home/alfred.brian.chua/lab5v3/lib/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'pipeline_riscv' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'FWD_WB/clk': 1720 load(s), 1 driver(s)
+1
+report_constraint -all_violators > constraint_report.log
+report_area > area_report.log
+report_timing > timing_report.log
+write_sdf -version 1.0 mapped/pipeline_riscv.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/alfred.brian.chua/lab5v3/mapped/pipeline_riscv.sdf'. (WT-3)
+1
+write -f verilog -hier -out mapped/pipeline_riscv_mapped.v
+Writing verilog file '/home/alfred.brian.chua/lab5v3/mapped/pipeline_riscv_mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 134 nets to module pipeline_riscv using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+quit
+
+Thank you...
+

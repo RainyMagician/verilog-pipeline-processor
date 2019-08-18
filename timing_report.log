@@ -1,0 +1,57 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : pipeline_riscv
+Version: I-2013.12
+Date   : Tue Apr 17 16:44:36 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: nrst (input port clocked by clk)
+  Endpoint: RF/mem_reg[27][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pipeline_riscv     140000                saed90nm_typ
+  rf                 70000                 saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  nrst (in)                                0.00       5.00 f
+  RF/nrst (rf)                             0.00       5.00 f
+  RF/U3/QN (NAND2X1)                       0.04       5.04 r
+  RF/U1152/ZN (INVX0)                      0.07       5.11 f
+  RF/U1136/Q (AND3X1)                      0.16       5.27 f
+  RF/U21/Q (AO21X1)                        0.12       5.39 f
+  RF/U851/ZN (INVX0)                       0.11       5.50 r
+  RF/U62/Q (AO22X1)                        0.08       5.59 r
+  RF/mem_reg[27][3]/D (DFFX1)              0.00       5.59 r
+  data arrival time                                   5.59
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -3.00      17.00
+  RF/mem_reg[27][3]/CLK (DFFX1)            0.00      17.00 r
+  library setup time                      -0.06      16.94
+  data required time                                 16.94
+  -----------------------------------------------------------
+  data required time                                 16.94
+  data arrival time                                  -5.59
+  -----------------------------------------------------------
+  slack (MET)                                        11.35
+
+
+1
